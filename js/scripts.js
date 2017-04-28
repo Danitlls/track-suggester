@@ -12,19 +12,17 @@ $(document).ready(function(){
         lenguage.push($(this).val());
     });
     // console.log(typeof(detail));
-    //   console.log(typeof(logic));
+      // console.log(lenguage);
 
-    // alert("My favourite lenguages are: " + lenguage.join(", "));
+
     // Variables from survey:
-
     var career1;
     var career2;
     var career3;
-    //logic to return results from survey.
-    // if (detail === "" || logic === "" || company === "" || art === ""){
-    //   alert("")
-    // }
+    var lengua;
 
+
+    //logic to return results from survey.
     if (detail === 1 && logic === 1 && art === 1){
       career1 = "Java";
       career2 = "C# and .Net";
@@ -37,6 +35,10 @@ $(document).ready(function(){
       career1 = "C# and .Net";
       career2 = "Java";
       career3 = "Ruby and Rails";
+    } else if(detail === 2 || logic === 2 || art === 2){
+      career1 = "CSS and Design";
+      career2 = "PHP and Dupal";
+      career3 = "JavaScript";
     } else if (detail === 3 && logic === 2 && art === 1){
       career1 = "probably not in the tech field";
       career2 = "taking intro classes to try it";
@@ -45,14 +47,21 @@ $(document).ready(function(){
       alert("Please complete all the filds");
     }
 
+    //coment about the lenguages that the user selected:
+    if( lenguage == "none of above"){
+      lenguage = "none of above programming lenguages,"
+      lengua = " it would be great to star exploring that!.";
+    }else if (lenguage !== [""] ){
+      lengua = " It's awesome that you already know that! Keep learning!!.";
+    }
+
+    //display the messages or results:
     $("#hidden").show();
     $("#career1").text(career1);
     $("#career2").text(career2);
     $("#career3").text(career3);
-    console.log(career1);
-
-
-
+    $("#lenguage").text(lenguage);
+    $("#iflenguage").text(lengua);
 
   });
 });
