@@ -2,9 +2,12 @@
   display: none;
   text-align: center;
   float:right;
-  border: pink solid 2px;
+  padding-top: 100px;
+  border: #d9edf7 solid 2px;
   border-radius: 10px;
-  background-color: #d2eaff;
+  background-color: #f3f5f7;
+  height: 400px;
+  width:50%;
 }
 #hidden p{
   font-size: 18px;
@@ -12,25 +15,32 @@
 .text{
   margin-top: 20px;
   float:left;
+  font-size: 16px;
+  color: white;
 }
+
 .form-group{
-  padding: 20px 10px;
+  padding: 5px 10px;
 }
 
 .checkbox{
   margin-left: 35px;
 }
-
+body{
+  background-color: #337ab7;
+}
 h1, h2, h3{
-  /*font-size: 12px;*/
+  font-family: Helvetica, sans-serif;
   text-align: center;
 }
-
+.title{
+  color: #f1f1f1;
+}
 /*.survey{
   margin: 10px 8%;
 }*/
 
 .btn{
-  padding: 10px 30px;
+  padding: 10px 80px;
   margin: 10px 5%;
 }

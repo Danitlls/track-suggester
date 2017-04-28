@@ -42,8 +42,8 @@ $(document).ready(function(){
       career2 = "taking intro classes to try it";
       career3 = "decide";
     } else{
-      career1 = "CAMBIARRRRRR";
-      // alert("Please complete all the filds");
+      alert("Please complete all the filds");
+      $("#hidden").hide(100);
     }
 
     //coment about the lenguages that the user selected:
@@ -55,14 +55,14 @@ $(document).ready(function(){
     }
 
     //display the messages or results:
-    $(".text").fadeOut(800);
-    $(".survey").animate({width: "45%"}, 2000);
-    $("#hidden").fadeIn(800);
     $("#career1").text(career1);
     $("#career2").text(career2);
     $("#career3").text(career3);
     $("#lenguage").text(lenguage);
     $("#iflenguage").text(lengua);
+    $(".text").fadeOut(1200);
+    $(".survey").animate({width: "45%"}, 1600);
+    $("#hidden").fadeIn(1800);
 
   });
 });
