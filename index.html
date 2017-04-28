@@ -16,34 +16,34 @@
       </div>
       <div class="survey">
         <h3>Take the survey!</h3>
-        <form id="quiz" class="">
+        <form id="quiz" class="" action="index.html" method="post">
 
           <div class="form-group">
             <p>Are you a detail-oriented person?</p>
-            <label class="checkbox-inline"><input type="radio" name="detail" value="a">Yes, I am!.</label>
-            <label class="checkbox-inline"><input type="radio" name="detail" value="b">Sometimes I am.</label>
-            <label class="checkbox-inline"><input type="radio" name="detail" value="b">Not really.</label>
+            <label class="checkbox-inline"><input type="radio" name="detail" value="1">Yes, I am!.</label>
+            <label class="checkbox-inline"><input type="radio" name="detail" value=2>Sometimes I am.</label>
+            <label class="checkbox-inline"><input type="radio" name="detail" value=3>Not really.</label>
           </div>  <!-- closes form-group -->
 
           <div class="form-group">
             <p>Do you consider yourself a mainly logical or emotional person?</p>
-            <label class="checkbox-inline"><input type="radio" name="logic" value="a">Mostly logical.</label>
-            <label class="checkbox-inline"><input type="radio" name="logic" value="b">I can't decide.</label>
-            <label class="checkbox-inline"><input type="radio" name="logic" value="b">Mostly emotional.</label>
+            <label class="checkbox-inline"><input type="radio" name="logic" value="1">Mostly logical.</label>
+            <label class="checkbox-inline"><input type="radio" name="logic" value="2">I can't decide.</label>
+            <label class="checkbox-inline"><input type="radio" name="logic" value="3">Mostly emotional.</label>
           </div>  <!-- closes form-group -->
 
           <div class="form-group">
             <p>Would you like to work in a big company?</p>
-            <label class="checkbox-inline"><input type="radio" name="company" value="a">Yes, I Do!.</label>
-            <label class="checkbox-inline"><input type="radio" name="company" value="b">Maybe.</label>
-            <label class="checkbox-inline"><input type="radio" name="company" value="b">Not really.</label>
+            <label class="checkbox-inline"><input type="radio" name="company" value="1">Yes, I Do!.</label>
+            <label class="checkbox-inline"><input type="radio" name="company" value="2">Maybe.</label>
+            <label class="checkbox-inline"><input type="radio" name="company" value="3">Not really.</label>
           </div>  <!-- closes form-group -->
 
           <div class="form-group">
             <p>Do you find Art inspiring?</p>
-            <label class="checkbox-inline"><input type="radio" name="art" value="a">Not my thing.</label>
-            <label class="checkbox-inline"><input type="radio" name="art" value="b">It depends on the artist.</label>
-            <label class="checkbox-inline"><input type="radio" name="art" value="b">I love Art!</label>
+            <label class="checkbox-inline"><input type="radio" name="art" value="1" >Not my thing.</label>
+            <label class="checkbox-inline"><input type="radio" name="art" value="2">It depends on the artist.</label>
+            <label class="checkbox-inline"><input type="radio" name="art" value="3">I love Art!</label>
           </div>  <!-- closes form-group -->
 
           <div class="form-group">
@@ -52,13 +52,16 @@
               <input type="checkbox" name="Options" id="inlineRadio1" value="a"> Ruby/Rails
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="Options" id="inlineRadio2" value="b"> Java
+              <input type="checkbox" name="Options" id="inlineRadio2" value="b"> Java.
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="Options" id="inlineRadio3" value="c"> JavaScript
+              <input type="checkbox" name="Options" id="inlineRadio3" value="c"> JavaScript.
             </label>
             <label class="checkbox">
-              <input type="checkbox" name="Options" id="inlineRadio4" value="d"> CSS
+              <input type="checkbox" name="Options" id="inlineRadio4" value="d"> CSS.
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="Options" id="inlineRadio5" value="d"> None of the above.
             </label>
           </div>  <!-- closes form-group -->
 
@@ -66,9 +69,10 @@
         </form>
       </div>  <!-- closes survey -->
 
-      <div class="hidden">
-        <p>We discovered that your best match is <span class="career1"></span></p>
-        <p>But you should also consider <span class="career"></span> and <span class="career3"></span></p>
+      <div id="hidden">
+        <h2>Thank you for taking the survey!</h2>
+        <p>We discovered that your best match is <span id="career1"></span></p>
+        <p>But you should also consider <span id="career2"></span> and <span id="career3"></span> </p>
       </div>
 
     </div> <!-- closes main container -->
