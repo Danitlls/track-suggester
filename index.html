@@ -14,79 +14,74 @@
         <h1>Track Suggester</h1>
         <h2>Find out your best match in the tech world</h2>
       </div>
+      <div class="row">
+        <div class=" text col-md-5 push-md-7">
+          <p>No one can deny that careers in information technology are here to stay. The field is attractive, lucrative, and supporting a booming industry. This quiz is designed to help you decide which major branch of the technology industry you're most likely to enjoy. While it is no replacement for a job counselor, this quiz is based on industry statistics and research and should help to point you in the direction that you may find interesting.</p>
+          <p>This test has three types of questions: Self-report, scenarios, and skill-testing questions. For the self-report and scenario questions, choose responses that best apply to you or that best describe how you would respond to a situation. Select answers that are based on your typical thoughts, feelings, and behavior. For the skill-testing questions, choose what you believe is the correct answer.</p>
+          <p>After finishing the test, you will receive a Snapshot Report with an introduction, a graph and a personalized interpretation for one of your test scores. You will then have the option to purchase the full results.</p>
+        </div>
+        <div class="survey panel panel-info col-md-7 pull-md-5">
+          <div class="panel-heading">
+              <h3>Take the survey!</h3>
+          </div>
+          <form id="quiz" action="index.html" method="post">
+            <div class="form-group">
+              <p>Are you a detail-oriented person?</p>
+              <label class="checkbox-inline"><input type="radio" name="detail" value="1">Yes, I am!.</label>
+              <label class="checkbox-inline"><input type="radio" name="detail" value=2>Sometimes I am.</label>
+              <label class="checkbox-inline"><input type="radio" name="detail" value=3>Not really.</label>
+            </div>  <!-- closes form-group -->
 
-          <div class="row">
-            <div class=" text col-md-5 push-md-7">
-              <p>No one can deny that careers in information technology are here to stay. The field is attractive, lucrative, and supporting a booming industry. This quiz is designed to help you decide which major branch of the technology industry you're most likely to enjoy. While it is no replacement for a job counselor, this quiz is based on industry statistics and research and should help to point you in the direction that you may find interesting.</p>
-              <p>This test has three types of questions: Self-report, scenarios, and skill-testing questions. For the self-report and scenario questions, choose responses that best apply to you or that best describe how you would respond to a situation. Select answers that are based on your typical thoughts, feelings, and behavior. For the skill-testing questions, choose what you believe is the correct answer.</p>
-              <p>After finishing the test, you will receive a Snapshot Report with an introduction, a graph and a personalized interpretation for one of your test scores. You will then have the option to purchase the full results.</p>
-            </div>
-            <div class="survey panel panel-info col-md-7 pull-md-5">
-            <div class="panel-heading">
-                <h3>Take the survey!</h3>
-            </div>
-            <form id="quiz" action="index.html" method="post">
-              <div class="form-group">
-                <p>Are you a detail-oriented person?</p>
-                <label class="checkbox-inline"><input type="radio" name="detail" value="1">Yes, I am!.</label>
-                <label class="checkbox-inline"><input type="radio" name="detail" value=2>Sometimes I am.</label>
-                <label class="checkbox-inline"><input type="radio" name="detail" value=3>Not really.</label>
-              </div>  <!-- closes form-group -->
+            <div class="form-group">
+              <p>Do you consider yourself a mainly logical or emotional person?</p>
+              <label class="checkbox-inline"><input type="radio" name="logic" value="1">Mostly logical.</label>
+              <label class="checkbox-inline"><input type="radio" name="logic" value="2">I can't decide.</label>
+              <label class="checkbox-inline"><input type="radio" name="logic" value="3">Mostly emotional.</label>
+            </div>  <!-- closes form-group -->
 
-              <div class="form-group">
-                <p>Do you consider yourself a mainly logical or emotional person?</p>
-                <label class="checkbox-inline"><input type="radio" name="logic" value="1">Mostly logical.</label>
-                <label class="checkbox-inline"><input type="radio" name="logic" value="2">I can't decide.</label>
-                <label class="checkbox-inline"><input type="radio" name="logic" value="3">Mostly emotional.</label>
-              </div>  <!-- closes form-group -->
+            <div class="form-group">
+              <p>Would you like to work in a big company?</p>
+              <label class="checkbox-inline"><input type="radio" name="company" value="1">Yes, I Do!.</label>
+              <label class="checkbox-inline"><input type="radio" name="company" value="2">Maybe.</label>
+              <label class="checkbox-inline"><input type="radio" name="company" value="3">Not really.</label>
+            </div>  <!-- closes form-group -->
 
-              <div class="form-group">
-                <p>Would you like to work in a big company?</p>
-                <label class="checkbox-inline"><input type="radio" name="company" value="1">Yes, I Do!.</label>
-                <label class="checkbox-inline"><input type="radio" name="company" value="2">Maybe.</label>
-                <label class="checkbox-inline"><input type="radio" name="company" value="3">Not really.</label>
-              </div>  <!-- closes form-group -->
+            <div class="form-group">
+              <p>Do you find Art inspiring?</p>
+              <label class="checkbox-inline"><input type="radio" name="art" value="1" >Not my thing.</label>
+              <label class="checkbox-inline"><input type="radio" name="art" value="2">It depends on the artist.</label>
+              <label class="checkbox-inline"><input type="radio" name="art" value="3">I love Art!</label>
+            </div>  <!-- closes form-group -->
 
-              <div class="form-group">
-                <p>Do you find Art inspiring?</p>
-                <label class="checkbox-inline"><input type="radio" name="art" value="1" >Not my thing.</label>
-                <label class="checkbox-inline"><input type="radio" name="art" value="2">It depends on the artist.</label>
-                <label class="checkbox-inline"><input type="radio" name="art" value="3">I love Art!</label>
-              </div>  <!-- closes form-group -->
+            <div class="form-group">
+              <p>Are you familiar with any of this lenguages?</p>
+              <label class="checkbox">
+                <input type="checkbox" name="Options" id="inlineRadio1" value="Ruby/Rails"> Ruby/Rails
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="Options" id="inlineRadio2" value="Java"> Java.
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="Options" id="inlineRadio3" value="JavaScript"> JavaScript.
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="Options" id="inlineRadio4" value="CSS"> CSS.
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="Options" id="inlineRadio5" value="none of above"> None of the above.
+              </label>
+            </div>  <!-- closes form-group -->
 
-              <div class="form-group">
-                <p>Are you familiar with any of this lenguages?</p>
-                <label class="checkbox">
-                  <input type="checkbox" name="Options" id="inlineRadio1" value="Ruby/Rails"> Ruby/Rails
-                </label>
-                <label class="checkbox">
-                  <input type="checkbox" name="Options" id="inlineRadio2" value="Java"> Java.
-                </label>
-                <label class="checkbox">
-                  <input type="checkbox" name="Options" id="inlineRadio3" value="JavaScript"> JavaScript.
-                </label>
-                <label class="checkbox">
-                  <input type="checkbox" name="Options" id="inlineRadio4" value="CSS"> CSS.
-                </label>
-                <label class="checkbox">
-                  <input type="checkbox" name="Options" id="inlineRadio5" value="none of above"> None of the above.
-                </label>
-              </div>  <!-- closes form-group -->
-
-              <button type="submit" class="btn btn-primary btn-lg">Find out!</button>
-            </form>
-
-            </div>
-            <div id="hidden" class="col-md-4">
-              <div class="">
-                <h2>Thank you for taking the survey!</h2>
-                <p>We discovered that your best match is <strong><span id="career1"></span></strong></p>
-                <p>But you should also consider <span id="career2"></span>, maybe <span id="career3"></span> would also be a good fit for you!.</p>
-                <h4>You are familiar with <strong><span id="lenguage"></span></strong><span id="iflenguage"></span></h4>
-              </div>
-            </div>
-          </div>  <!-- closes survey -->
-
+            <button type="submit" class="btn btn-primary btn-lg">Find out!</button>
+          </form>
+      </div> <!-- closes survey -->
+        <div id="hidden" class="col-md-4">
+            <h2>Thank you for taking the survey!</h2>
+            <p>We discovered that your best match is <strong><span id="career1"></span></strong></p>
+            <p>But you should also consider <span id="career2"></span>, maybe <span id="career3"></span> would also be a good fit for you!.</p>
+            <h4>You are familiar with <strong><span id="lenguage"></span></strong><span id="iflenguage"></span></h4>
+        </div>
+      </div>  <!-- closes row -->
     </div> <!-- closes main container -->
   </body>
 </html>
