@@ -1,0 +1,23 @@
+.hidden{
+  display: none;
+}
+.form-group{
+  padding: 20px 30px;
+}
+
+.checkbox{
+  margin-left: 35px;
+}
+
+h1, h2, h3{
+  text-align: center;
+}
+
+.survey{
+  margin: 10px 8%;
+}
+
+.btn{
+  padding: 10px 50px;
+  margin: 10px 25%;
+}
