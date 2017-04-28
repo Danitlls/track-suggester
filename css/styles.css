@@ -1,14 +1,17 @@
 #hidden{
   display: none;
   text-align: center;
-  margin: 60px 0;
-  padding: 20px;
+  float:right;
   border: pink solid 2px;
   border-radius: 10px;
   background-color: #d2eaff;
 }
 #hidden p{
   font-size: 18px;
+}
+.text{
+  margin-top: 20px;
+  float:left;
 }
 .form-group{
   padding: 20px 10px;

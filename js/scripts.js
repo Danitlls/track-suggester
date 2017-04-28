@@ -55,7 +55,9 @@ $(document).ready(function(){
     }
 
     //display the messages or results:
-    $("#hidden").show();
+    $(".text").fadeOut(800);
+    $(".survey").animate({width: "45%"}, 2000);
+    $("#hidden").fadeIn(800);
     $("#career1").text(career1);
     $("#career2").text(career2);
     $("#career3").text(career3);
