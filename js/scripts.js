@@ -14,19 +14,17 @@ $(document).ready(function(){
     // console.log(typeof(detail));
       // console.log(lenguage);
 
-
     // Variables from survey:
     var career1;
     var career2;
     var career3;
     var lengua;
 
-
     //logic to return results from survey.
     if (detail === 1 && logic === 1 && art === 1){
       career1 = "Java";
       career2 = "C# and .Net";
-      career3 = "PHP and Dupal";
+      career3 = "PHP & Dupal";
     } else if(detail === 1 && logic === 3 && art === 3){
       career1 = "CSS and Design";
       career2 = "Ruby and Rails";
@@ -34,23 +32,24 @@ $(document).ready(function(){
     } else if(detail === 1 && logic === 1 && company === 1){
       career1 = "C# and .Net";
       career2 = "Java";
-      career3 = "Ruby and Rails";
+      career3 = "Ruby & Rails";
     } else if(detail === 2 || logic === 2 || art === 2){
       career1 = "CSS and Design";
-      career2 = "PHP and Dupal";
+      career2 = "PHP & Dupal";
       career3 = "JavaScript";
     } else if (detail === 3 && logic === 2 && art === 1){
       career1 = "probably not in the tech field";
       career2 = "taking intro classes to try it";
       career3 = "decide";
     } else{
-      alert("Please complete all the filds");
+      career1 = "CAMBIARRRRRR";
+      // alert("Please complete all the filds");
     }
 
     //coment about the lenguages that the user selected:
     if( lenguage == "none of above"){
-      lenguage = "none of above programming lenguages,"
-      lengua = " it would be great to star exploring that!.";
+      lenguage = "none of above programming lenguages, "
+      lengua = " it would be great to start exploring that!.";
     }else if (lenguage !== [""] ){
       lengua = " It's awesome that you already know that! Keep learning!!.";
     }
