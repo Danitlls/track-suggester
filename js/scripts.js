@@ -21,15 +21,15 @@ $(document).ready(function(){
     var lengua;
 
     //logic to return results from survey.
-    if (detail === 1 && logic === 1 && art === 1){
+    if (detail === 1 && logic === 1 && art === 1 && company === 1){
       career1 = "Java";
       career2 = "C# and .Net";
       career3 = "PHP & Dupal";
-    } else if(detail === 1 && logic === 3 && art === 3){
+    } else if(detail === 1 && logic === 3 && art === 3 && company === 2){
       career1 = "CSS and Design";
       career2 = "Ruby and Rails";
       career3 = "JavaScript";
-    } else if(detail === 1 && logic === 1 && company === 1){
+    } else if(detail === 1 && logic === 1 && company === 1 ){
       career1 = "C# and .Net";
       career2 = "Java";
       career3 = "Ruby & Rails";
