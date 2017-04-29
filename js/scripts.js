@@ -7,12 +7,12 @@ $(document).ready(function(){
     var logic = parseInt($("input:radio[name=logic]:checked").val());
     var company = parseInt($("input:radio[name=company]:checked").val());
     var art = parseInt($("input:radio[name=art]:checked").val());
-    var lenguage = [];
+    var language = [];
     $.each($("input[name=Options]:checked"), function(){
-        lenguage.push($(this).val());
+        language.push($(this).val());
     });
     // console.log(typeof(detail));
-      // console.log(lenguage);
+      // console.log(language);
 
     // Variables from survey:
     var career1;
@@ -24,7 +24,7 @@ $(document).ready(function(){
     if (detail === 1 && logic === 1 && art === 1 && company === 1){
       career1 = "Java";
       career2 = "C# and .Net";
-      career3 = "PHP & Dupal";
+      career3 = "PHP & Drupal";
     } else if(detail === 1 && logic === 3 && art === 3 && company === 2){
       career1 = "CSS and Design";
       career2 = "Ruby and Rails";
@@ -35,31 +35,31 @@ $(document).ready(function(){
       career3 = "Ruby & Rails";
     } else if(detail === 2 || logic === 2 || art === 2){
       career1 = "CSS and Design";
-      career2 = "PHP & Dupal";
+      career2 = "PHP & Drupal";
       career3 = "JavaScript";
     } else if (detail === 3 && logic === 2 && art === 1){
       career1 = "probably not in the tech field";
       career2 = "taking intro classes to try it";
       career3 = "decide";
     } else{
-      alert("Please complete all the filds");
+      alert("Please complete all of the fields");
       $("#hidden").hide(100);
     }
 
-    //coment about the lenguages that the user selected:
-    if( lenguage == "none of above"){
-      lenguage = "none of above programming lenguages, "
-      lengua = " it would be great to start exploring that!.";
-    }else if (lenguage !== [""] ){
-      lengua = " It's awesome that you already know that! Keep learning!!.";
+    //coment about the languages that the user selected:
+    if( language == "none of above"){
+      language = "none of the above programming languages, "
+      lengua = " it would be great to start exploring that!";
+    }else if (language.length !== 0 ){
+      lengua = " It's awesome that you already know that! Keep learning!!";
     }
 
     //display the messages or results:
     $("#career1").text(career1);
     $("#career2").text(career2);
     $("#career3").text(career3);
-    $("#lenguage").text(lenguage);
-    $("#iflenguage").text(lengua);
+    $("#language").text(language);
+    $("#iflanguage").text(lengua);
     $(".text").fadeOut(1200);
     $(".survey").animate({width: "45%"}, 1600);
     $("#hidden").fadeIn(1800);
