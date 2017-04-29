@@ -46,3 +46,30 @@ h1, h2, h3{
   padding: 10px 80px;
   margin: 10px 5%;
 }
+
+@media all and (max-width: 1000px){
+
+  .col-md-7{
+    width: 100%;
+    float: left;
+    margin: 2px 2%;
+  }
+
+  .col-md-4{
+    width: 90%;
+    float: left;
+  }
+}
+
+@media all and (max-width: 600px){
+
+  .col-md-7{
+    width: 100%;
+    margin: 2px 6%;
+  }
+
+  #hidden{
+    margin: 0 2%;
+    width: 92%;
+  }
+}
